@@ -1,6 +1,6 @@
 from controlhub import write
 
-text = "{{TEXT}}"
+text = r"{{TEXT}}"
 
 write(text)
 print(f"Wrote text: {text}")

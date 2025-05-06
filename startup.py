@@ -15,5 +15,8 @@ from wakeonlan import send_magic_packet
 
 for pc in computers:
     if pc["status"] == "0":
-        send_magic_packet(pc["mac"])
-        print(f"Sent magic packet to {pc['name']}")
+        try:
+            send_magic_packet(pc["mac"])
+            print(f"Sent magic packet to {pc['name']}")
+        except Exception as e:
+            print(e, pc["name"])
