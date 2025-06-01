@@ -5,7 +5,6 @@ import (
 	"math"
 	"os"
 	"strings"
-	"time"
 
 	"golang.org/x/term"
 )
@@ -77,6 +76,5 @@ func main() {
 
 		A += 0.04
 		B += 0.02
-		time.Sleep(16 * time.Millisecond) // ~60 FPS
 	}
 }
