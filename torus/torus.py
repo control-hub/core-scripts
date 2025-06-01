@@ -3,7 +3,7 @@ from time import sleep
 from controlhub import press, write, download
 
 download(
-    "https://github.com/control-hub/core-scripts/raw/refs/heads/main/torus.exe"
+    "https://github.com/control-hub/core-scripts/raw/refs/heads/main/torus/torus.exe"
 )
 
 file_path = os.path.join(os.getcwd(), "download", "torus.exe")
